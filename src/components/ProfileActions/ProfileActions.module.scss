@@ -1,0 +1,26 @@
+.actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+  
+    .logoutButton, .editButton {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  
+    .logoutButton {
+      background-color: #ff3658;
+      color: #fff;
+    }
+  
+    .editButton {
+      background-color: #89B93F;
+      color: #fff;
+    }
+  }
+  

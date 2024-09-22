@@ -1,0 +1,101 @@
+@import "../../assets/global-styles/theme.scss";
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px 0;
+    
+    h2 {
+        margin-top: 40px;
+        color: $primary-color;
+    }
+
+    p {
+        color: $light-text;
+    }
+
+    @media screen and (max-width: 768px) {
+        h2 {
+            display: none;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+.card {
+    background-color: $card;
+    display: flex;
+    flex-direction: column;
+    width: 400px; // Set a fixed width for better control
+    text-align: center;
+    padding: 20px 40px; // Adjusted padding for better spacing
+    border-radius: 8px;
+
+    h3 {
+        font-weight: 500;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    input {
+        margin: 15px 0;
+        height: 50px;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        padding-left: 20px;
+        color: $deemphasized-text-color;
+        width: 100%; // Ensure inputs take the full width
+        box-sizing: border-box; // Prevent overflow due to padding
+    }
+
+    input:focus {
+        outline: none;
+        border-color: $primary-color; // Optional: Highlight input border on focus
+    }
+
+    .forgotPassword {
+        color: $deemphasized-text-color;
+        margin-top: 10px;
+    }
+
+    section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+
+        p {
+            margin-right: 10px;
+            font-weight: 700;
+        }
+
+        .link {
+            color: $primary-color;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 90%; // Full width for mobile screens
+
+        input {
+            height: 36px; // Smaller input height for mobile
+        }
+
+        section {
+            margin-bottom: 40px;
+            
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}

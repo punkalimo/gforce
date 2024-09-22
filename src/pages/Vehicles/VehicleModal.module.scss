@@ -1,0 +1,75 @@
+.modalBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 600px;
+  background-color: white;
+  border: none;
+  box-shadow: 24px;
+  padding: 20px;
+  border-radius: 8px;
+  max-height: 80vh; /* Limits the height to 80% of the viewport */
+  overflow-y: auto; /* Enables vertical scrolling if content overflows */
+}
+
+.modalTitle {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.inputField {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.submitButton {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background-color: #45a049;
+  }
+}
+
+/* Adding smooth scrolling for better UX */
+.modalBox::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modalBox::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 8px;
+}
+
+.modalBox::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputLabel {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 5px;
+}

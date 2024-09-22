@@ -1,0 +1,91 @@
+@import "../../assets/global-styles/theme.scss";
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px 0;
+
+    h2 {
+        margin-top: 40px;
+        color: $primary-color;
+    }
+
+    p {
+        color: $light-text;
+    }
+
+    @media screen and (max-width: 768px) {
+        h2 {
+            display: none;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+.card {
+    background-color: $card;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    text-align: center;
+    padding: 20px; // Add padding for better spacing
+    border-radius: 8px;
+
+    h3 {
+        font-weight: 500;
+    }
+
+    input {
+        margin: 10px 0; // Reduced margin for tighter alignment
+        height: 50px;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        padding-left: 20px;
+        color: $deemphasized-text-color;
+        width: 100%; // Ensure inputs take full width
+        max-width: 400px; // Optional: set a max width
+
+        &:focus {
+            outline: none;
+            border: 1px solid $primary-color; // Optional: change border color on focus
+        }
+    }
+
+    .forgotPassword {
+        color: $deemphasized-text-color;
+        margin-top: 10px;
+    }
+
+    section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            margin-right: 10px;
+            font-weight: 700;
+        }
+        .link {
+            color: $primary-color;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 90%;
+
+        input {
+            height: 36px;
+        }
+        section {
+            margin-bottom: 40px;
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}

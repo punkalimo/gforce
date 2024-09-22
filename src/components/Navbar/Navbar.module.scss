@@ -1,0 +1,61 @@
+@import '../../assets/global-styles/theme.scss';
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #474D59;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  h2 {
+    color: $primary-color;
+    text-decoration: none; 
+  }
+  a {
+    text-decoration: none !important;
+  }
+
+  ul {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+    li {
+      list-style-type: none;
+      
+      a {
+        text-decoration: none; /* Remove underline */
+        color: $light-text;
+        
+        &:hover {
+          color: $active-link;
+          text-decoration: none; /* Make sure no underline on hover */
+        }
+      }
+    }
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 13%;
+
+  .button {
+    height: 35px;
+    width: 90px;
+  }
+
+  a {
+    color: $light-text;
+    text-decoration: none; /* Remove underline */
+
+    &:hover {
+      color: $active-link;
+      text-decoration: none; /* Ensure no underline on hover */
+    }
+  }
+}

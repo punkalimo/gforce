@@ -1,0 +1,32 @@
+/* || Colors  */
+
+// Color Definition
+$forest-green: #4CAF50; // To match the green in the logo
+$olive-green: #8BC34A;
+$white: #ffffff;
+$black: #333333;
+$charcoal: #2F2F2F;
+$light-grey: #E0E0E0;
+$warm-yellow: #FFB74D;
+$accent-green: #43A047; // A darker accent green for emphasis
+$active-link: #00796B;
+
+// Color Assignment
+$primary-color: $forest-green;
+$secondary-color: $olive-green;
+$background-color: $charcoal;
+$light-text: $white;
+$active-link: $active-link;
+$card: #3E3E3E; // Dark grey for card backgrounds
+$deemphasized-text-color: $light-grey;
+$error-color: $warm-yellow;
+
+/* || Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+// Font Sizes
+$font-40: 40px;
+$font-24: 24px;
+$font-20: 20px;
+$font-16: 16px;
+$font-14: 14px;

@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+  
+  .profileSection {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .bookedVehiclesSection {
+    flex: 1;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  // ProfilePage.module.scss
+.profileContainer {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: auto;
+  
+    h2 {
+      margin-bottom: 20px;
+    }
+  
+    .userInfo {
+      list-style: none;
+      padding: 0;
+  
+      li {
+        margin-bottom: 10px;
+        font-size: 16px;
+      }
+    }
+  
+    .editButton {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #45a049;
+      }
+    }
+  }
+  
