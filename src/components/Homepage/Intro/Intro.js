@@ -1,7 +1,5 @@
 import styles from './Intro.module.scss';
 import logo from '../../../assets/logo.jpeg';
-import { useEffect, useMemo, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 
 
 const Intro = ()=>{

@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '../../components/Navbar/Navbar';
 import Intro from '../../components/Homepage/Intro/Intro';
 import WhoWeHelp from '../../components/Homepage/WhoWeHelp/WhoWeHelp';
 import WhyUs from '../../components/Homepage/WhyUS/WhyUs';

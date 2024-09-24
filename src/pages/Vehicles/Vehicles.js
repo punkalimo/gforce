@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import StarOutlineIcon from '@mui/icons-material/StarOutline';
-import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
 import Input from '../../components/Input/Input';
 import Dropdown from './components/DropDown';
@@ -10,7 +9,6 @@ import { jwtDecode } from 'jwt-decode'; // Corrected import
 import styles from './infoAboutVehicle/InfoAboutVehicle.module.scss';
 import modalStyles from './VehicleModal.module.scss'; // Import custom styles for modal
 import axios from 'axios';
-import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { toast } from 'react-toastify';
 const Vehicles = () => {

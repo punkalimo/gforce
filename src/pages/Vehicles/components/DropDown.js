@@ -4,7 +4,7 @@ import myStyles from './DropDown.module.scss';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
-import Select, { SelectChangeEvent } from '@mui/material/Select';
+import Select from '@mui/material/Select';
 import Button from '../../../components/Buttons/Button';
 
 
@@ -38,26 +38,7 @@ const Dropdown = ({ data, refetch }) => {
 		const numbers = Array.from(price.split('-'), Number);
 		const splitVolume = Array.from(volume.split('-'), Number);
 		const splitMarketCap = Array.from(marketCap.split('-'), Number);
-		const filteredItems = data?.filter((item) => {
-			if (industry === '') {
-				return (
-					parseFloat(item.lastsale) >= numbers[0] &&
-					parseFloat(item.lastsale) <= numbers[1] &&
-					parseFloat(item.marketCap) >= splitMarketCap[0] &&
-					parseFloat(item.marketCap) <= splitMarketCap[1] &&
-					parseFloat(item.volume) >= splitVolume[0] &&
-					parseFloat(item.volume) <= splitVolume[1]
-				);
-			} else {
-				return (
-					parseFloat(item.lastsale) >= numbers[0] &&
-					parseFloat(item.lastsale) <= numbers[1] &&
-					item.industry === industry &&
-					parseFloat(item.marketCap) >= splitMarketCap[0] &&
-					parseFloat(item.marketCap) >= splitMarketCap[0]
-				);
-			}
-		});
+	
 		
 	};
 
