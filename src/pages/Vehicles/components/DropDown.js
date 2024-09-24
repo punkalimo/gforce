@@ -35,9 +35,9 @@ const Dropdown = ({ data, refetch }) => {
 			item.lastsale = item.lastsale.replace('$', '');
 			return item;
 		});
-		const numbers = Array.from(price.split('-'), Number);
+		/**const numbers = Array.from(price.split('-'), Number);
 		const splitVolume = Array.from(volume.split('-'), Number);
-		const splitMarketCap = Array.from(marketCap.split('-'), Number);
+		const splitMarketCap = Array.from(marketCap.split('-'), Number);**/
 	
 		
 	};
