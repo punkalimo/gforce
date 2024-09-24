@@ -32,16 +32,15 @@ const BookedVehiclesInfo = () => {
   const vehiclesPerPage = 2; // Number of vehicles to display per page
 
   useEffect(() => {
-    // Simulate fetching booked vehicles data
     const fetchBookedVehicles = () => {
       setTimeout(() => {
         setBookedVehicles(dummyBookedVehicles);
-      }, 500); // Simulate network delay
+      }, 500);
     };
-
+  
     fetchBookedVehicles();
-  }, []);
-
+  }, [dummyBookedVehicles]);
+  
   // Calculate the index range for the current page
   const indexOfLastVehicle = currentPage * vehiclesPerPage;
   const indexOfFirstVehicle = indexOfLastVehicle - vehiclesPerPage;
