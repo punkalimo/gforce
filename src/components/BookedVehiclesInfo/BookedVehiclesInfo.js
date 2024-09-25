@@ -2,45 +2,44 @@ import React, { useState, useEffect } from 'react';
 import styles from './BookedVehiclesInfo.module.scss';
 
 const BookedVehiclesInfo = () => {
-  // Dummy data for booked vehicles
-  const dummyBookedVehicles = [
-    {
-      id: 1,
-      vehicleName: 'Toyota Corolla',
-      returnDate: '2024-09-30',
-      mileage: 15234,
-      nextServiceDate: '2025-01-15',
-      rate: 'K850.00',
-      licensePlate: 'BAD 4105',
-      imageUrl: 'https://hagerty-media-prod.imgix.net/2021/12/2021-Toyota-Corolla-Hatchback-SE-Nightshade-3-scaled.jpg?auto=format%2Ccompress&ixlib=php-3.3.0', // Vehicle image
-    },
-    {
-      id: 2,
-      vehicleName: 'Ford Transit',
-      returnDate: '2024-10-05',
-      mileage: 58490,
-      nextServiceDate: '2025-02-20',
-      rate: 'K950.00',
-      licensePlate: 'BAD 3705',
-      imageUrl: 'https://example.com/ford-transit.jpg',
-    },
-    // Additional vehicles
-  ];
-
   const [bookedVehicles, setBookedVehicles] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const vehiclesPerPage = 2; // Number of vehicles to display per page
 
   useEffect(() => {
+    // Dummy data for booked vehicles
+    const dummyBookedVehicles = [
+      {
+        id: 1,
+        vehicleName: 'Toyota Corolla',
+        returnDate: '2024-09-30',
+        mileage: 15234,
+        nextServiceDate: '2025-01-15',
+        rate: 'K850.00',
+        licensePlate: 'BAD 4105',
+        imageUrl: 'https://hagerty-media-prod.imgix.net/2021/12/2021-Toyota-Corolla-Hatchback-SE-Nightshade-3-scaled.jpg?auto=format%2Ccompress&ixlib=php-3.3.0',
+      },
+      {
+        id: 2,
+        vehicleName: 'Ford Transit',
+        returnDate: '2024-10-05',
+        mileage: 58490,
+        nextServiceDate: '2025-02-20',
+        rate: 'K950.00',
+        licensePlate: 'BAD 3705',
+        imageUrl: 'https://example.com/ford-transit.jpg',
+      },
+    ];
+
     const fetchBookedVehicles = () => {
       setTimeout(() => {
         setBookedVehicles(dummyBookedVehicles);
       }, 500);
     };
-  
+
     fetchBookedVehicles();
-  }, [dummyBookedVehicles]);
-  
+  }, []); // Empty dependency array means this will run only once
+
   // Calculate the index range for the current page
   const indexOfLastVehicle = currentPage * vehiclesPerPage;
   const indexOfFirstVehicle = indexOfLastVehicle - vehiclesPerPage;
